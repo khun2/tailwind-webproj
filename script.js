@@ -14,3 +14,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(`input[value="${savedTheme}"]`).checked = true;
     }
 });
+function updateTime()

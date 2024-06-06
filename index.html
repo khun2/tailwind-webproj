@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar bg-gradient-to-r from-primary to-secondary sticky">
+    <nav class="navbar bg-gradient-to-r from-primary to-secondary fixed top-0">
         <div class="navbar-start">
             <div class="dropdown pr-2">
                 <div tabindex="0" role="button" class="btn bg-base-200 lg:hidden">
@@ -113,10 +113,36 @@
             </div>
         </div>
     </main>
-    <footer class="grid grid-cols-3 bg-gradient-to-r from-primary to-secondary p-3">
-        <p class="col-span-2 text-center inline-block align-bottom text-primary-content">Ha tetszik az oldal vagy valamilyen hibát
+    <footer class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary justify-items-center fixed bottom-0 p-3">
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max text-primary-content">
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                </span>
+                days
+            </div>
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                </span>
+                hours
+            </div>
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                </span>
+                min
+            </div>
+            <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                </span>
+                sec
+            </div>
+        </div>
+        <p class="text-center inline-block align-bottom text-primary-content font-semibold">Ha tetszik az oldal vagy valamilyen hibát
             talált írjon nekem egy emailt!</p>
-        <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn">Nyomjon ide!</a>
+        <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch">Nyomjon ide!</a>
     </footer>
 </body>
 
