@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar bg-gradient-to-r from-primary to-secondary fixed top-0">
+    <nav class="navbar bg-gradient-to-r from-primary to-secondary lg:fixed top-0">
         <div class="navbar-start">
             <div class="dropdown pr-2">
                 <div tabindex="0" role="button" class="btn bg-base-200 lg:hidden">
@@ -20,16 +20,16 @@
                             d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+                <ul tabindex="0" class="menu menu-sm dropdown-content z-[2] p-2 shadow-2xl bg-base-300 rounded-box">
                     <li>
-                        <a>c#</a>
+                        c#
                         <ul class="p-2">
                             <li><a href="./subpages/karesz.html">Karesz</a></li>
                             <li><a href="./subpages/progthm.html">Programozási tételek</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a>c++</a>
+                        c++
                         <ul class="p-2">
                             <li><a href="./subpages/algopro.html">Algopro</a></li>
                             <li><a href="./subpages/cpp.html">Programozási tételek</a></li>
@@ -42,7 +42,7 @@
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 ">
-                <li class="dropdown dropdown-bottomp">
+                <li class="dropdown dropdown-bottom">
                     <div tabindex="0" role="button" class="btn">
                         c++
                         <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block"
@@ -97,7 +97,7 @@
     </nav>
     <main>
         <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row">
+            <div class="hero-content flex-col lg:flex-row z-1">
                 <div>
                     <h1 class="text-5xl font-bold">Portfólió</h1>
                     <p class="py-6">Itt található a portfólióm az év végi informatika projektem ami összefoglaja mindent
@@ -113,36 +113,37 @@
             </div>
         </div>
     </main>
-    <footer class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary justify-items-center fixed bottom-0 p-3">
+    <footer class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary justify-items-center lg:fixed bottom-0 p-3">
         <div class="grid grid-flow-col gap-5 text-center auto-cols-max text-primary-content">
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono lg:text-5xl text-2xl">
                     <span style="--value:15;"></span>
                 </span>
                 days
             </div>
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono lg:text-5xl text-2xl">
                     <span style="--value:10;"></span>
                 </span>
                 hours
             </div>
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono lg:text-5xl text-2xl">
                     <span style="--value:24;"></span>
                 </span>
                 min
             </div>
             <div class="flex flex-col">
-                <span class="countdown font-mono text-5xl">
+                <span class="countdown font-mono lg:text-5xl text-2xl">
                     <span style="--value:10;"></span>
                 </span>
                 sec
             </div>
         </div>
-        <p class="text-center inline-block align-bottom text-primary-content font-semibold">Ha tetszik az oldal vagy valamilyen hibát
+        <p class="text-center md:inline-block align-bottom text-primary-content font-semibold hidden">Ha tetszik az oldal vagy valamilyen hibát
             talált írjon nekem egy emailt!</p>
-        <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch">Nyomjon ide!</a>
+        <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch">Írjon nekem egy emailt!</a>
+
     </footer>
 </body>
 
