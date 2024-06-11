@@ -23,13 +23,13 @@ function updateCountdown() {
     document.getElementById('sec').style.setProperty('--value', seconds);
 }
 
-setInterval(updateCountdown, 1000); // Update countdown every second
-updateCountdown(); // Initial call to set the countdown immediately
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         applyTheme(savedTheme);
         document.querySelector(`input[value="${savedTheme}"]`).checked = true;
-    }
+        }
+        setInterval(updateCountdown, 1000); // Update countdown every second
+        updateCountdown(); // Initial call to set the countdown immediately
 });

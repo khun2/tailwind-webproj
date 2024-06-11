@@ -1,160 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Káli Hunor - Portfólió</title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../output.css" />
     <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar bg-gradient-to-r from-primary to-secondary">
-        <div class="navbar-start">
-            <div class="dropdown pr-2">
-                <div tabindex="0" role="button" class="btn bg-base-200 lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
-                    <li>
-                        <a>c#</a>
-                        <ul class="p-2">
-                            <li><a href="./karesz.html">Karesz</a></li>
-                            <li><a href="./progthm.html">Programozási tételek</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a>c++</a>
-                        <ul class="p-2">
-                            <li><a href="./algopro.html">Algopro</a></li>
-                            <li><a href="./cpp.html">Programozási tételek</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./webdev.html">Web development</a></li>
-                </ul>
+      <div class="navbar-start">
+        <div class="dropdown pr-2">
+          <div tabindex="0" role="button" class="btn bg-base-200 lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+            <li>
+              <a>c#</a>
+              <ul class="p-2">
+                <li><a href="./karesz.html">Karesz</a></li>
+                <li><a href="./progthm.html">Programozási tételek</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>c++</a>
+              <ul class="p-2">
+                <li><a href="./algopro.html">Algopro</a></li>
+                <li><a href="./cpp.html">Programozási tételek</a></li>
+              </ul>
+            </li>
+            <li><a href="./webdev.html">Web development</a></li>
+          </ul>
+        </div>
+        <a href="../index.html" class="btn bg-base-200 text-xl">Főoldal</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li class="dropdown dropdown-bottomp">
+            <div tabindex="0" role="button" class="btn">
+              c++
+              <svg
+                width="12px"
+                height="12px"
+                class="h-2 w-2 fill-current opacity-60 inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048">
+                <path
+                  d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+              </svg>
             </div>
-            <a href="../index.html" class="btn bg-base-200 text-xl">Főoldal</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 ">
-                <li class="dropdown dropdown-bottomp">
-                    <div tabindex="0" role="button" class="btn">
-                        c++
-                        <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                            <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                        </svg>
-                    </div>
-                    <ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
-                        <li><a href="./algopro.html">Algopro</a></li>
-                        <li><a href="./cpp.html">Programozási tételek</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown dropdown-bottom px-2">
-                    <div tabindex="0" role="button" class="btn">
-                        c#
-                        <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                            <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                        </svg>
-                    </div>
-                    <ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
-                        <li><a href="./karesz.html">karesz</a></li>
-                        <li><a href="./progthm.html">Programozási tételek</a></li>
-                    </ul>
-                </li>
-                <li><a class="p-2 bg-base-200 btn" href="webdev.html">Web development</a></li>
+            <ul
+              tabindex="0"
+              class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+              <li><a href="./algopro.html">Algopro</a></li>
+              <li><a href="./cpp.html">Programozási tételek</a></li>
             </ul>
-        </div>
-        <div class="dropdown dropdown-bottom navbar-end flex">
-            <div tabindex="0" role="button" class="btn m-1">
-                Téma
-                <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                </svg>
+          </li>
+          <li class="dropdown dropdown-bottom px-2">
+            <div tabindex="0" role="button" class="btn">
+              c#
+              <svg
+                width="12px"
+                height="12px"
+                class="h-2 w-2 fill-current opacity-60 inline-block"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2048 2048">
+                <path
+                  d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+              </svg>
             </div>
-            <ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52">
-                <li><input type="radio" name="theme-dropdown"
-                        class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Default"
-                        value="default" onclick="setTheme('default')" /></li>
-                <li><input type="radio" name="theme-dropdown"
-                        class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Valentine"
-                        value="valentine" onclick="setTheme('valentine')" /></li>
-                <li><input type="radio" name="theme-dropdown"
-                        class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Retro"
-                        value="retro" onclick="setTheme('retro')" /></li>
-                <li><input type="radio" name="theme-dropdown"
-                        class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Cyberpunk"
-                        value="cyberpunk" onclick="setTheme('cyberpunk')" /></li>
+            <ul
+              tabindex="0"
+              class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+              <li><a href="./karesz.html">karesz</a></li>
+              <li><a href="./progthm.html">Programozási tételek</a></li>
             </ul>
+          </li>
+          <li>
+            <a class="p-2 bg-base-200 btn" href="webdev.html"
+              >Web development</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-bottom navbar-end flex">
+        <div tabindex="0" role="button" class="btn m-1">
+          Téma
+          <svg
+            width="12px"
+            height="12px"
+            class="h-2 w-2 fill-current opacity-60 inline-block"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 2048 2048">
+            <path
+              d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+          </svg>
         </div>
+        <ul
+          tabindex="0"
+          class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52">
+          <li>
+            <input
+              type="radio"
+              name="theme-dropdown"
+              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+              aria-label="Default"
+              value="default"
+              onclick="setTheme('default')" />
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="theme-dropdown"
+              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+              aria-label="Valentine"
+              value="valentine"
+              onclick="setTheme('valentine')" />
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="theme-dropdown"
+              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+              aria-label="Retro"
+              value="retro"
+              onclick="setTheme('retro')" />
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="theme-dropdown"
+              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+              aria-label="Cyberpunk"
+              value="cyberpunk"
+              onclick="setTheme('cyberpunk')" />
+          </li>
+        </ul>
+      </div>
     </nav>
-
     <main>
-        <h1>K.A.R.E.SZ.</h1>
-        <article>
-            <h2>OOPkares</h2>
-            <figure>
-                <img src="../img/karesz.png" alt="placeholder">
-                <figcaption>karesz</figcaption>
-            </figure>
+      <div class="flex gap-6 p-5 flex-col place-items-center">
+        <article class="card lg:card-side bg-base-content shadow-xl">
+          <figure>
+            <img
+              src="../img/karesz.png"
+              alt="Karesz miután megrajzolt egy házat" />
+          </figure>
+          <figcaption class="card-body text-base-300">
+            <h2 class="card-title">OOPKaresz</h2>
+            <h3>
+              A Középiskolai Algoritmusokra Rávezető Edukációs Szoftver másnéven
+              a Karesz egy taunlmányi program aminek a legrégebbi verziója
+              amivel dolgoztunk az OOPkaresz egy kis kék karakter aki vagy éppen
+              kavicsokat pakol le vagy rajzolgat itt látható az egyik legalapabb
+              ábvra amit csináltunk vele
+            </h3>
+          </figcaption>
         </article>
-        <article>
-            <h2>LogoKaresz</h2>
-            <figure>
-                <img src="../img/karesz.png" alt="placeholder">
-                <figcaption>karesz</figcaption>
-            </figure>
+
+        <article class="card lg:card-side bg-base-content shadow-xl">
+          <figcaption class="card-body text-base-300">
+            <h2 class="card-title">LogoKaresz</h2>
+            <h3>
+              Emellett a LogoKaresszal dolgoztunk ez az imagine logonak egy
+              újraírása c#-ban amihez c#-ban kell írni az utasításokat, ez aszt
+              tesz lehetővé hogy komplikáltam "algorimtikusabb" feladatokat és
+              ábrákat csináljunk
+            </h3>
+          </figcaption>
+          <figure>
+            <img src="../img/karesz.png" alt="Album" />
+          </figure>
         </article>
-        <article>
-            <h2>Fraktálok LogoKareszben</h2>
-            <figure>
-                <img src="../img/karesz.png" alt="placeholder">
-                <figcaption>karesz</figcaption>
-            </figure>
+        <article class="card lg:card-side bg-base-content shadow-xl">
+          <figure>
+            <img src="../img/karesz.png" alt="Album" />
+          </figure>
+          <figcaption class="card-body text-base-300">
+            <h2 class="card-title">Nehezebb feladatok LogoKareszban</h2>
+            <h3>
+              Itt még be szeretném mutatni az egyik kedvenc feladatomat amit a
+              LogoKaresszal csináltam. Ez a Magasságtételfraktál. Ez volt az
+              utolsó Fraktálos feladat amit csináltam és ezért nagyon érezhettem
+              rajta az hogy mennyit fejlődtem az év alatt.
+            </h3>
+          </figcaption>
         </article>
+        <article class="card w-96 bg-base-content shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="../img/sexyman.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <figcaption class="card-body items-center text-center text-base-300">
+            <h2 class="card-title"> Extra: </h2>
+            <h3>
+              Viccből megkértem egy kedves osztáltársamat hogy csináljon nekem
+              egy tumblr-sexyman kareszt és itt látható a végeredménye
+            </h3>
+          </figcaption>
+        </article>
+      </div>
     </main>
 
     <footer
-        class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary justify-items-center bottom-0 p-3">
-        <div class="hidden sm:grid grid-flow-col gap-5 text-center auto-cols-max text-primary-content">
-            <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-5xl text-2xl">
-                    <span style="--value:15;"></span>
-                </span>
-                days
-            </div>
-            <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-5xl text-2xl">
-                    <span style="--value:10;"></span>
-                </span>
-                hours
-            </div>
-            <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-5xl text-2xl">
-                    <span style="--value:24;"></span>
-                </span>
-                min
-            </div>
-            <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-5xl text-2xl">
-                    <span style="--value:10;"></span>
-                </span>
-                sec
-            </div>
+      class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary place-items-center p-3">
+      <div
+        class="hidden sm:grid grid-flow-col gap-5 text-center auto-cols-max text-primary-content">
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="days" style="--value: 7"></span>
+          </span>
+          days
         </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="hours" style="--value: 0"></span>
+          </span>
+          hours
+        </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="min" style="--value: 0"></span>
+          </span>
+          min
+        </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="sec" style="--value: 0"></span>
+          </span>
+          sec
+        </div>
+      </div>
 
-        <p class="text-center align-bottom text-primary-content font-semibold">Ha tetszik az oldal vagy valamilyen hibát
-            talált írjon nekem egy emailt!</p>
-        <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch">Írjon nekem egy emailt!</a>
-
+      <p class="text-center text-primary-content card-title">
+        Ha tetszik az oldal vagy valamilyen hibát talált írjon nekem egy emailt!
+      </p>
+      <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch"
+        >Írjon nekem egy emailt!</a
+      >
     </footer>
-</body>
-
+  </body>
 </html>
