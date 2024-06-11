@@ -100,49 +100,89 @@
         <h1 class="p-6 text-3xl">
             Az Algopro
         </h1>
-        <p class="text-3xl">Október óta az algopro nevezető programozóegyesületbe járok csütörtkönént</p>
-        <code>
-            asdf
-        </code>
+        <p class="text-3xl">Október óta az algopro nevezetű programozóegyesületbe járok csütörtkönént. Itt c++-val
+            dolgozunk és algoritmusokat veszünk
+            az oldalukat <a class="underline" href="https://algopro.hu/">itt</a> vagy lejjeb egy iframeben
+            megtekintheti.
+        </p>
+        <h2>itt látható a megoldásom <a class="underline" href="https://www.spoj.com/problems/EKO/">EKO- Eko</a>
+            nevezetű feladatra</h2>
+        <pre class="p-6 rounded-md flex flex-col lg:flex-row place-items-center">
+            <code class="block bg-accent rounded-md font-mono text-accent-content p-4 overflow-scroll max-w-fit">
+#include <bits/stdc++.h>
+#include <vector>
+using namespace std;
 
-        
-        <div class="flex flex-col place-items-center p-6">
-            <p>Itt Látható az algopro weboldala:</p>
-            <iframe src="https://algopro.hu/" class="rounded w-2/3 aspect-square lg:aspect-video" frameborder="0"></iframe>
-        </div>
+bool checkTrees(vector<int>& v, int& mid, int& desired) {
+    int sum = 0;
+    for(int x : v) {
+        if(x - mid > 0) {
+            sum += x-mid;
+            if (sum >= desired) return true;
+        }
+    }
+    return false;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int n, desired;
+    cin >> n >> desired;
+    vector<int>v(n);
+    for (int i = 0; i < n; i++) {
+        cin >> v[i];
+    }
+    int l = 0, r = 2000000, mid;
+    while(r-l > 1) {
+        mid = (l+r) / 2;
+        if (checkTrees(v, mid, desired)) l = mid;
+        else r = mid; 
+    }
+    cout << l;
+}
+            </code>
+            
+            
+                <p>Itt Látható az algopro weboldala:</p>
+                <iframe src="https://algopro.hu/" class="rounded w-4/5 aspect-square lg:aspect-video"
+                frameborder="0"></iframe>
+        </pre>
     </main>
 
     <footer
-        class="flex justify-between gap-3  bg-gradient-to-r w-full from-primary to-secondary justify-items-center lg:fixed bottom-0 p-3">
+        class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary justify-items-center lg:fixed bottom-0 p-3">
         <div class="hidden sm:grid grid-flow-col gap-5 text-center auto-cols-max text-primary-content">
             <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-4xl text-2xl">
-                    <span style="--value:15;"></span>
+                <span class="countdown font-mono lg:text-5xl text-2xl">
+                    <span id="days" style="--value:15;"></span>
                 </span>
                 days
             </div>
             <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-4xl text-2xl">
-                    <span style="--value:10;"></span>
+                <span class="countdown font-mono lg:text-5xl text-2xl">
+                    <span id="hours" style="--value:10;"></span>
                 </span>
                 hours
             </div>
             <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-4xl text-2xl">
-                    <span style="--value:24;"></span>
+                <span class="countdown font-mono lg:text-5xl text-2xl">
+                    <span id="min" style="--value:24;"></span>
                 </span>
                 min
             </div>
             <div class="flex flex-col">
-                <span class="countdown font-mono lg:text-4xl text-2xl">
-                    <span style="--value:10;"></span>
+                <span class="countdown font-mono lg:text-5xl text-2xl">
+                    <span id="sec" style="--value:10;"></span>
                 </span>
                 sec
             </div>
         </div>
+
         <p class="text-center align-bottom text-primary-content font-semibold">Ha tetszik az oldal vagy valamilyen hibát
             talált írjon nekem egy emailt!</p>
         <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch">Írjon nekem egy emailt!</a>
+
     </footer>
 </body>
 
