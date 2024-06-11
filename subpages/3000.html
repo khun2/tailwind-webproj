@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Káli Hunor - Portfólió - Algopro</title>
+    <title>Káli Hunor - Portfólió - 3000+</title>
     <link rel="stylesheet" href="../output.css" />
     <script src="../script.js"></script>
   </head>
 
   <body>
+    <header>
     <nav class="navbar bg-gradient-to-r from-primary to-secondary">
       <div class="navbar-start">
         <div class="dropdown pr-2">
@@ -33,14 +34,14 @@
               c#
               <ul class="p-2">
                 <li><a href="./karesz.html">Karesz</a></li>
-                <li><a href="./3000.html">3000+</a></li>
+                <li><a >3000+</a></li>
               </ul>
             </li>
             <li>
               c++
               <ul class="p-2">
-                <li><a >Algopro</a></li>
-                <li><a href="./progthm.html">Programozási tételek</a></li>
+                <li><a href="algopro.html">Algopro</a></li>
+                <li><a href="progthm.html">Programozási tételek</a></li>
               </ul>
             </li>
             <li><a href="./webdev.html">Web development</a></li>
@@ -66,7 +67,7 @@
             <ul
               tabindex="0"
               class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
-              <li><a >Algopro</a></li>
+              <li><a href="./algopro.html">Algopro</a></li>
               <li><a href="./progthm.html">Programozási tételek</a></li>
             </ul>
           </li>
@@ -87,12 +88,11 @@
               tabindex="0"
               class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
               <li><a href="./karesz.html">karesz</a></li>
-              <li><a href="./3000.html">3000+</a></li>
+              <li><a >3000+</a></li>
             </ul>
           </li>
           <li>
-            <a class="p-2 bg-base-200 btn" href="./webdev.html"
-              >Web development</a
+            <a class="p-2 bg-base-200 btn" href="webdev.html">Web development</a
             >
           </li>
         </ul>
@@ -152,65 +152,9 @@
         </ul>
       </div>
     </nav>
+    </header>
 
-    <main>
-      <h1 class="p-6 text-3xl">Az Algopro</h1>
-      <p class="px-6 pb-4">
-        Október óta az algopro nevezetű programozóegyesületbe járok
-        csütörtkönént. Itt c++-val dolgozunk és algoritmusokat veszünk az
-        oldalukat <a class="underline" href="https://algopro.hu/">itt</a> vagy
-        lejjeb egy iframeben megtekintheti.
-      </p>
-      <h2 class="flex flex-col place-items-center text-2xl">
-        itt látható a megoldásom <a class="underline" href="https://www.spoj.com/problems/EKO/">EKO- Eko</a>
-        nevezetű feladatra
-      </h2>
-
-      <pre class="p-4 flex space-x-4 sm:flex-col place-items-center">
-    <code class="text-sm sm:text-base text-primary-content overflow-x-scroll md:overflow-auto flex bg-gradient-to-r from-primary to-secondary rounded-lg px-6 max-w-fit">
-#include &lt;bits/stdc++.h&gt;
-#include &lt;vector&gt;
-using namespace std;
-
-bool checkTrees(vector&lt;int&gt;& v, int& mid, int& desired) {
-    int sum = 0;
-    for(int x : v) {
-        if(x - mid &gt; 0) {
-            sum += x - mid;
-            if (sum &gt;= desired) return true;
-        }
-    }
-    return false;
-}
-
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    int n, desired;
-    cin &gt;&gt; n &gt;&gt; desired;
-    vector&lt;int&gt; v(n);
-    for (int i = 0; i &lt; n; i++) {
-        cin &gt;&gt; v[i];
-    }
-    int l = 0, r = 2000000, mid;
-    while (r - l &gt; 1) {
-        mid = (l + r) / 2;
-        if (checkTrees(v, mid, desired)) l = mid;
-        else r = mid; 
-    }
-    cout &lt;&lt; l;
-}
-            </code>
-        </pre>
-
-      <div class="p-6 rounded-lg flex flex-col place-items-center">
-        <p>Itt Látható az algopro weboldala:</p>
-        <iframe
-          src="https://algopro.hu/"
-          class="rounded w-4/5 aspect-square lg:aspect-video"
-          frameborder="0"></iframe>
-      </div>
-    </main>
+    <main>fadsf</main>
 
     <footer
       class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary place-items-center p-3">
@@ -242,8 +186,7 @@ int main() {
         </div>
       </div>
 
-      <p
-        class="text-center text-primary-content font-semibold md:font-normal md:card-title">
+      <p class="text-center text-primary-content card-title">
         Ha tetszik az oldal vagy valamilyen hibát talált írjon nekem egy emailt!
       </p>
       <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch"
