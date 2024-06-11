@@ -10,151 +10,253 @@
 
   <body>
     <header>
-    <nav class="navbar bg-gradient-to-r from-primary to-secondary">
-      <div class="navbar-start">
-        <div class="dropdown pr-2">
-          <div tabindex="0" role="button" class="btn bg-base-200 lg:hidden">
+      <nav class="navbar bg-gradient-to-r from-primary to-secondary">
+        <div class="navbar-start">
+          <div class="dropdown pr-2">
+            <div tabindex="0" role="button" class="btn bg-base-200 lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+              <li>
+                c#
+                <ul class="p-2">
+                  <li><a href="./karesz.html">Karesz</a></li>
+                  <li><a>3000+</a></li>
+                </ul>
+              </li>
+              <li>
+                c++
+                <ul class="p-2">
+                  <li><a href="algopro.html">Algopro</a></li>
+                  <li><a href="progthm.html">Programozási tételek</a></li>
+                </ul>
+              </li>
+              <li><a href="./webdev.html">Web development</a></li>
+            </ul>
+          </div>
+          <a href="../index.html" class="btn bg-base-200 text-xl">Főoldal</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="dropdown dropdown-bottomp">
+              <div tabindex="0" role="button" class="btn">
+                c++
+                <svg
+                  width="12px"
+                  height="12px"
+                  class="h-2 w-2 fill-current opacity-60 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2048 2048">
+                  <path
+                    d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+                <li><a href="./algopro.html">Algopro</a></li>
+                <li><a href="./progthm.html">Programozási tételek</a></li>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-bottom px-2">
+              <div tabindex="0" role="button" class="btn">
+                c#
+                <svg
+                  width="12px"
+                  height="12px"
+                  class="h-2 w-2 fill-current opacity-60 inline-block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2048 2048">
+                  <path
+                    d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+                <li><a href="./karesz.html">karesz</a></li>
+                <li><a>3000+</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="p-2 bg-base-200 btn" href="webdev.html"
+                >Web development</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-bottom navbar-end flex">
+          <div tabindex="0" role="button" class="btn m-1">
+            Téma
             <svg
+              width="12px"
+              height="12px"
+              class="h-2 w-2 fill-current opacity-60 inline-block"
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
+              viewBox="0 0 2048 2048">
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
+                d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
             </svg>
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+            class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52">
             <li>
-              c#
-              <ul class="p-2">
-                <li><a href="./karesz.html">Karesz</a></li>
-                <li><a >3000+</a></li>
-              </ul>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Default"
+                value="default"
+                onclick="setTheme('default')" />
             </li>
             <li>
-              c++
-              <ul class="p-2">
-                <li><a href="algopro.html">Algopro</a></li>
-                <li><a href="progthm.html">Programozási tételek</a></li>
-              </ul>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Valentine"
+                value="valentine"
+                onclick="setTheme('valentine')" />
             </li>
-            <li><a href="./webdev.html">Web development</a></li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Retro"
+                value="retro"
+                onclick="setTheme('retro')" />
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="theme-dropdown"
+                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                aria-label="Cyberpunk"
+                value="cyberpunk"
+                onclick="setTheme('cyberpunk')" />
+            </li>
           </ul>
         </div>
-        <a href="../index.html" class="btn bg-base-200 text-xl">Főoldal</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li class="dropdown dropdown-bottomp">
-            <div tabindex="0" role="button" class="btn">
-              c++
-              <svg
-                width="12px"
-                height="12px"
-                class="h-2 w-2 fill-current opacity-60 inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 2048 2048">
-                <path
-                  d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
-              <li><a href="./algopro.html">Algopro</a></li>
-              <li><a href="./progthm.html">Programozási tételek</a></li>
-            </ul>
-          </li>
-          <li class="dropdown dropdown-bottom px-2">
-            <div tabindex="0" role="button" class="btn">
-              c#
-              <svg
-                width="12px"
-                height="12px"
-                class="h-2 w-2 fill-current opacity-60 inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 2048 2048">
-                <path
-                  d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
-              <li><a href="./karesz.html">karesz</a></li>
-              <li><a >3000+</a></li>
-            </ul>
-          </li>
-          <li>
-            <a class="p-2 bg-base-200 btn" href="webdev.html">Web development</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="dropdown dropdown-bottom navbar-end flex">
-        <div tabindex="0" role="button" class="btn m-1">
-          Téma
-          <svg
-            width="12px"
-            height="12px"
-            class="h-2 w-2 fill-current opacity-60 inline-block"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 2048 2048">
-            <path
-              d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-          </svg>
-        </div>
-        <ul
-          tabindex="0"
-          class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52">
-          <li>
-            <input
-              type="radio"
-              name="theme-dropdown"
-              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-              aria-label="Default"
-              value="default"
-              onclick="setTheme('default')" />
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="theme-dropdown"
-              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-              aria-label="Valentine"
-              value="valentine"
-              onclick="setTheme('valentine')" />
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="theme-dropdown"
-              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-              aria-label="Retro"
-              value="retro"
-              onclick="setTheme('retro')" />
-          </li>
-          <li>
-            <input
-              type="radio"
-              name="theme-dropdown"
-              class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
-              aria-label="Cyberpunk"
-              value="cyberpunk"
-              onclick="setTheme('cyberpunk')" />
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
     </header>
 
-    <main>fadsf</main>
+    <main>
+      <h1 class="p-5 text-3xl">3000+-os feladatsorok</h1>
+      <p class="p-5">
+        A háromezres feladatsorok egy kollekciója számos adatkefeldolgozási
+        feladatnak ami Nagy Tibor állított össze, ezekből az első kilenc csak
+        számokkal dolgozik és az utolsó 6 classokkal(vagy structokkal ha úgy
+        csinálod) dolgozik. <br />
+        Ezt az aloldalt a c#-hoz kategorizáltam, viszont az első kilenc
+        feladatsort c++ ban írtam, ezt azért tettem, mert az utolsó hat
+        feladatsort érdekesebbnek és nehezebbnek találtam.
+      </p>
+      <h2 class="p-5 text-center text-2xl">Itt láthat egy gyönörűszép ábrázatot a 3000+-os feladatsorokról</h2>
+      <div class="overflow-x-auto p-5">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Név</th>
+              <th>Programnyelv</th>
+              <th>Készen van-e?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover font-semibold">
+              <td>3000A+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000B+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000C+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000D+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000E+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000F+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000G+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000H+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000I+</td>
+              <td>C++</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000J+</td>
+              <td>C#</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000K+</td>
+              <td>C#</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000L+</td>
+              <td>C#</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000M+</td>
+              <td>C#</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000N+</td>
+              <td>C#</td>
+              <td>Igen</td>
+            </tr>
+            <tr class="hover font-semibold">
+              <td>3000O+</td>
+              <td>C#</td>
+              <td>Igen</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </main>
 
     <footer
       class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary place-items-center p-3">
