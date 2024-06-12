@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Káli Hunor - Portfólió</title>
     <link rel="stylesheet" href="output.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="karesz.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="karesz.ico" />
     <script src="script.js"></script>
   </head>
 
@@ -20,7 +20,10 @@
               class="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="currentColor"
+              role="img"
+              aria-labelledby="menu-icon-title">
+              <title id="menu-icon-title">Menu Icon</title>
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -62,7 +65,10 @@
                 height="12px"
                 class="h-2 w-2 fill-current opacity-60 inline-block"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 2048 2048">
+                viewBox="0 0 2048 2048"
+                role="img"
+                aria-labelledby="dropdown-icon-title">
+                <title id="dropdown-icon-title">Dropdown Arrow Icon</title>
                 <path
                   d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
               </svg>
@@ -71,7 +77,9 @@
               tabindex="0"
               class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
               <li><a href="./subpages/algopro.html">Algopro</a></li>
-              <li><a href="./subpages/progthm.html">Programozási tételek</a></li>
+              <li>
+                <a href="./subpages/progthm.html">Programozási tételek</a>
+              </li>
             </ul>
           </li>
           <li class="dropdown dropdown-bottom px-2">
@@ -82,7 +90,10 @@
                 height="12px"
                 class="h-2 w-2 fill-current opacity-60 inline-block"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 2048 2048">
+                viewBox="0 0 2048 2048"
+                role="img"
+                aria-labelledby="dropdown-icon-title">
+                <title id="dropdown-icon-title">Dropdown Arrow Icon</title>
                 <path
                   d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
               </svg>
@@ -111,7 +122,10 @@
             height="12px"
             class="h-2 w-2 fill-current opacity-60 inline-block"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 2048 2048">
+            viewBox="0 0 2048 2048"
+            role="img"
+            aria-labelledby="dropdown-icon-title">
+            <title id="dropdown-icon-title">Dropdown Arrow Icon</title>
             <path
               d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
           </svg>
@@ -215,38 +229,42 @@
       </div>
     </main>
 
-    <footer class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary place-items-center p-3 md:fixed md:bottom-0">
-    <div class="hidden sm:grid grid-flow-col gap-5 text-center auto-cols-max text-primary-content">
-      <div class="flex flex-col">
-        <span class="countdown font-mono lg:text-5xl text-2xl">
-          <span id="days" style="--value: 7"></span>
-        </span>
-        days
+    <footer
+      class="flex justify-between gap-3 bg-gradient-to-r w-full from-primary to-secondary place-items-center p-3 md:fixed md:bottom-0">
+      <div
+        class="hidden sm:grid grid-flow-col gap-5 text-center auto-cols-max text-primary-content">
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="days" style="--value: 7"></span>
+          </span>
+          days
+        </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="hours" style="--value: 0"></span>
+          </span>
+          hours
+        </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="min" style="--value: 0"></span>
+          </span>
+          min
+        </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono lg:text-5xl text-2xl">
+            <span id="sec" style="--value: 0"></span>
+          </span>
+          sec
+        </div>
       </div>
-      <div class="flex flex-col">
-        <span class="countdown font-mono lg:text-5xl text-2xl">
-          <span id="hours" style="--value: 0"></span>
-        </span>
-        hours
-      </div>
-      <div class="flex flex-col">
-        <span class="countdown font-mono lg:text-5xl text-2xl">
-          <span id="min" style="--value: 0"></span>
-        </span>
-        min
-      </div>
-      <div class="flex flex-col">
-        <span class="countdown font-mono lg:text-5xl text-2xl">
-          <span id="sec" style="--value: 0"></span>
-        </span>
-        sec
-      </div>
-    </div>
 
-    <p class="text-center text-primary-content card-title">
-      Ha tetszik az oldal vagy valamilyen hibát talált írjon nekem egy emailt!
-    </p>
-    <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch">Írjon nekem egy emailt!</a>
-  </footer>
+      <p class="text-center text-primary-content card-title">
+        Ha tetszik az oldal vagy valamilyen hibát talált írjon nekem egy emailt!
+      </p>
+      <a href="mailto:kali.hunor.23f@szlgbp.hu" class="btn justify-self-stretch"
+        >Írjon nekem egy emailt!</a
+      >
+    </footer>
   </body>
 </html>
