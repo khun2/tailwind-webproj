@@ -30,7 +30,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box">
+              class="menu menu-sm dropdown-content z-[2] p-2 shadow-2xl bg-base-300 rounded-box">
               <li>
                 c#
                 <ul class="p-2">
@@ -45,7 +45,7 @@
                   <li><a>Programozási tételek</a></li>
                 </ul>
               </li>
-              <li><a href="./webdev.html">Web development</a></li>
+              <li><a href="webdev.html">Webdev</a></li>
             </ul>
           </div>
           <a href="../index.html" class="btn bg-base-200 text-xl">Főoldal</a>
@@ -161,87 +161,174 @@
       <p class="px-4 py-2">Ezen az oldalon találhat egy összefoglalást az alap programozási tételekről c++-ban amiket et az év alatt tanultunk </p>
       <div class="flex flex-col gap-4 p-4">
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
-          <input type="radio" name="Csoportosítás" checked="checked" />
+          <input type="radio" name="collapse1" checked="checked" />
           <div class="collapse-title text-xl font-medium text-">Csoportosítás</div>
           <div class="collapse-content">
             <pre class="p-4 flex space-x-4 sm:flex-col place-items-center overflow-x-scroll md:overflow-auto">
-              <code class="text-sm sm:text-base text-accent-content  px-6 max-w-fit">
-#include &lt;bits/stdc++.h&gt;
+              <code class="text-sm sm:text-base text-accent-content font-semibold font-mono px-6 max-w-fit">
+//Számsor csoportosítása
+#include &lt;iostream&gt;
 #include &lt;vector&gt;
+#include &lt;unordered_map&gt;
 using namespace std;
-
-bool checkTrees(vector&lt;int&gt;& v, int& mid, int& desired) {
-    int sum = 0;
-    for(int x : v) {
-        if(x - mid &gt; 0) {
-            sum += x - mid;
-            if (sum &gt;= desired) return true;
-        }
-    }
-    return false;
-}
-
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    int n, desired;
-    cin &gt;&gt; n &gt;&gt; desired;
+    int n;
+    cin &gt;&gt; n;
     vector&lt;int&gt; v(n);
     for (int i = 0; i &lt; n; i++) {
         cin &gt;&gt; v[i];
     }
-    int l = 0, r = 2000000, mid;
-    while (r - l &gt; 1) {
-        mid = (l + r) / 2;
-        if (checkTrees(v, mid, desired)) l = mid;
-        else r = mid; 
+    unordered_map&lt;int, &lt;vector&gt;&gt; m;
+    for (int& x : m)
+    {
+        m[x].push_back(x);
     }
-    cout &lt;&lt; l;
 }
                       </code>
                   </pre>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
-          <input type="radio" name="Keresés" />
+          <input type="radio" name="collapse1" />
           <div class="collapse-title text-xl font-medium text-">Keresés</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <pre class="p-4 flex space-x-4 sm:flex-col place-items-center overflow-x-scroll md:overflow-auto">
+              <code class="text-sm sm:text-base text-accent-content font-semibold font-mono px-6 max-w-fit">
+//Negatív szám keresése
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+    int n;
+    cin &gt;&gt; n;
+    vector&lt;int&gt; v(n);
+    for (int i = 0; i &lt; n; i++) {
+        cin &gt;&gt; v[i];
+    }
+    int i = 0;
+    while (i < n && lista[i] &gt; 0)
+    {
+        i++;
+    }
+    cout &lt;&lt; i;
+}
+              </code>
+              </pre>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
-          <input type="radio" name="Kiválasztás" />
-          <div class="collapse-title text-xl font-medium text-">Kiválasztás</div>
-          <div class="collapse-content">
-            <p>hello</p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
-          <input type="radio" name="Kiválogatás" />
+          <input type="radio" name="collapse1" />
           <div class="collapse-title text-xl font-medium text-">Kiválogatás</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <pre class="p-4 flex space-x-4 sm:flex-col place-items-center overflow-x-scroll md:overflow-auto">
+              <code class="text-sm sm:text-base text-accent-content font-semibold font-mono px-6 max-w-fit">
+//Pozitív számok kiválogatása
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+    int n;
+    cin &gt;&gt; n;
+    vector&lt;int&gt; v(n), o;
+    for (int i = 0; i &lt; n; i++) {
+        cin &gt;&gt; v[i];
+    }
+    for (int x : v) {
+        if (x > 0) {
+            o.push_back(x);
+        }
+    }
+}
+                      </code>
+                  </pre>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
-          <input type="radio" name="Maximumkeresés" />
+          <input type="radio" name="collapse1" />
           <div class="collapse-title text-xl font-medium text-">Maximumkeresés</div>
           <div class="collapse-content">
-            <p>hello</p>
+<pre class="p-4 flex space-x-4 sm:flex-col place-items-center overflow-x-scroll md:overflow-auto">
+              <code class="text-sm sm:text-base text-accent-content font-semibold font-mono  px-6 max-w-fit">
+//Legnagyobb szám keresése
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+    int n;
+    cin &gt;&gt; n;
+    vector&lt;int&gt; v(n);
+    for (int i = 0; i &lt; n; i++) {
+        cin &gt;&gt; v[i];
+    }
+    int max = v[0];
+    for (int i = 1; i &lt; n; i++)
+    {
+        if (max &lt; v[i])
+        {
+            max = v[i];
+        }
+    }
+    cout &lt;&lt; max
+}
+                      </code>
+                  </pre>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
-          <input type="radio" name="Megszámlálás" />
+          <input type="radio" name="collapse1" />
           <div class="collapse-title text-xl font-medium text-">Megszámlálás</div>
           <div class="collapse-content">
-            <p>hello</p>
+<pre class="p-4 flex space-x-4 sm:flex-col place-items-center overflow-x-scroll md:overflow-auto">
+              <code class="text-sm sm:text-base text-accent-content font-semibold font-mono px-6 max-w-fit">
+//Pozitív számok Megszámlálása
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+    int n;
+    cin &gt;&gt; n;
+    vector&lt;int&gt; v(n);
+    for (int i = 0; i &lt; n; i++) {
+        cin &gt;&gt; v[i];
+    }
+    int num = 0;
+    for (int i = ; i &lt; n; i++)
+    {
+        if (0 &lt; v[i])
+        {
+            num++;
+        }
+    }
+    cout &lt;&lt; num
+}
+                      </code>
+                  </pre>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
-          <input type="radio" name="Összegzés" />
+          <input type="radio" name="collapse1" />
           <div class="collapse-title text-xl font-medium text-">Összegzés</div>
           <div class="collapse-content">
-            <p>hello</p>
+<pre class="p-4 flex space-x-4 sm:flex-col place-items-center overflow-x-scroll md:overflow-auto">
+              <code class="text-sm sm:text-base text-accent-content font-semibold font-mono px-6 max-w-fit">
+//Számok összege kiszámolása 
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+int main() {
+    int n, num = 0;
+    cin &gt;&gt; n;
+    vector&lt;int&gt; v(n);
+    for (int i = 0; i &lt; n; i++) {
+        cin &gt;&gt; v[i];
+    }
+    for (int x : v) {
+        n += x;
+    }
+    cout &lt;&lt; n;
+}
+                      </code>
+                  </pre>
           </div>
         </div>
       </div>
