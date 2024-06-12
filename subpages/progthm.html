@@ -157,13 +157,48 @@
 
     <main>
       <h1 class="p-4 text-3xl">Programozási tételek</h1>
-      <p class="px-4 py-2">Ezen az oldalon találhat egy összefoglalást az alap programozási tételekről amiket et az év alatt tanultunk </p>
+      <p class="px-4 py-2">Ezen az oldalon találhat egy összefoglalást az alap programozási tételekről c++-ban amiket et az év alatt tanultunk </p>
       <div class="flex flex-col gap-4 p-4">
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
           <input type="radio" name="Csoportosítás" checked="checked" />
           <div class="collapse-title text-xl font-medium text-">Csoportosítás</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <pre class="p-4 flex space-x-4 sm:flex-col place-items-center overflow-x-scroll md:overflow-auto">
+              <code class="text-sm sm:text-base text-accent-content  px-6 max-w-fit">
+#include &lt;bits/stdc++.h&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+bool checkTrees(vector&lt;int&gt;& v, int& mid, int& desired) {
+    int sum = 0;
+    for(int x : v) {
+        if(x - mid &gt; 0) {
+            sum += x - mid;
+            if (sum &gt;= desired) return true;
+        }
+    }
+    return false;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int n, desired;
+    cin &gt;&gt; n &gt;&gt; desired;
+    vector&lt;int&gt; v(n);
+    for (int i = 0; i &lt; n; i++) {
+        cin &gt;&gt; v[i];
+    }
+    int l = 0, r = 2000000, mid;
+    while (r - l &gt; 1) {
+        mid = (l + r) / 2;
+        if (checkTrees(v, mid, desired)) l = mid;
+        else r = mid; 
+    }
+    cout &lt;&lt; l;
+}
+                      </code>
+                  </pre>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-gradient-to-r from-accent to-info text-secondary-content">
