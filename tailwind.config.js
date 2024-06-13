@@ -13,7 +13,7 @@ module.exports = {
           ]
         },
         fontFamily: {
-          'h1': ['Rubik Broken Fax', 'sans']
+          jetbrains: ["JetBrains Mono", "mono"]
         },
         gradientColorStopPositions: {
           // Végtelen felhő az aljánhoz :D
