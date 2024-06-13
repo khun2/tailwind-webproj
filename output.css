@@ -2669,6 +2669,38 @@ details.collapse summary::-webkit-details-marker {
   padding: 0px;
 }
 
+.card-side {
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.card-side :where(figure:first-child) {
+  overflow: hidden;
+  border-start-start-radius: inherit;
+  border-start-end-radius: unset;
+  border-end-start-radius: inherit;
+  border-end-end-radius: unset;
+}
+
+.card-side :where(figure:last-child) {
+  overflow: hidden;
+  border-start-start-radius: unset;
+  border-start-end-radius: inherit;
+  border-end-start-radius: unset;
+  border-end-end-radius: inherit;
+}
+
+.card-side figure > * {
+  max-width: unset;
+}
+
+:where(.card-side figure > *) {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .join.join-vertical {
   flex-direction: column;
 }
@@ -2918,6 +2950,10 @@ details.collapse summary::-webkit-details-marker {
   aspect-ratio: 1 / 1;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-2 {
   height: 0.5rem;
 }
@@ -2928,6 +2964,10 @@ details.collapse summary::-webkit-details-marker {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-2 {
@@ -3045,10 +3085,6 @@ details.collapse summary::-webkit-details-marker {
   border-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -3096,6 +3132,11 @@ details.collapse summary::-webkit-details-marker {
   fill: currentColor;
 }
 
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -3119,11 +3160,6 @@ details.collapse summary::-webkit-details-marker {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .px-2 {
@@ -3163,20 +3199,20 @@ details.collapse summary::-webkit-details-marker {
   padding-right: 0.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
 .font-jetbrains {
   font-family: JetBrains Mono, mono;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
@@ -3192,6 +3228,11 @@ details.collapse summary::-webkit-details-marker {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -3326,6 +3367,18 @@ details.collapse summary::-webkit-details-marker {
     display: grid;
   }
 
+  .sm\:w-96 {
+    width: 24rem;
+  }
+
+  .sm\:w-3 {
+    width: 0.75rem;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -3345,8 +3398,35 @@ details.collapse summary::-webkit-details-marker {
     bottom: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
   .md\:overflow-auto {
     overflow: auto;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:font-normal {
